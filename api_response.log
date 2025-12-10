@@ -1,0 +1,34 @@
+Note: Unnecessary use of -X or --request, POST is already inferred.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host eajeyq4r3zljog4rpovy2nthda0vtjaf.lambda-url.ap-south-1.on.aws:443 was resolved.
+* IPv6: 2406:da1a:5a5:f001:bc26:ca18:5efd:3e75, 2406:da1a:5a5:f003:ca4e:d892:bf14:175d, 2406:da1a:5a5:f002:427c:616b:6caf:fb7f
+* IPv4: 65.0.254.30, 65.0.229.212, 3.6.238.51
+*   Trying [2406:da1a:5a5:f001:bc26:ca18:5efd:3e75]:443...
+*   Trying 65.0.254.30:443...
+* Connected to eajeyq4r3zljog4rpovy2nthda0vtjaf.lambda-url.ap-south-1.on.aws (2406:da1a:5a5:f001:bc26:ca18:5efd:3e75) port 443
+* schannel: disabled automatic use of client certificate
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* using HTTP/1.x
+> POST / HTTP/1.1
+> Host: eajeyq4r3zljog4rpovy2nthda0vtjaf.lambda-url.ap-south-1.on.aws
+> User-Agent: curl/8.8.0
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 931
+> 
+} [931 bytes data]
+* upload completely sent off: 931 bytes
+* schannel: remote party requests renegotiation
+* schannel: renegotiating SSL/TLS connection
+* schannel: SSL/TLS connection renegotiated
+< HTTP/1.1 403 Forbidden
+< Date: Mon, 08 Dec 2025 11:33:32 GMT
+< Content-Type: application/json
+< Content-Length: 16
+< Connection: keep-alive
+< x-amzn-RequestId: 53902a26-cb34-4182-8c20-19ffdf0a514a
+< x-amzn-ErrorType: AccessDeniedException
+< 
+{ [16 bytes data]
+100   947  100    16  100   931     11    672  0:00:01  0:00:01 --:--:--   686{"Message":null}
+* Connection #0 to host eajeyq4r3zljog4rpovy2nthda0vtjaf.lambda-url.ap-south-1.on.aws left intact

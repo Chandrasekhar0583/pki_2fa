@@ -1,0 +1,14 @@
+encrypted_seed.txt
+
+__pycache__/
+*.pyc
+
+.env
+
+.vscode/
+.idea/
+
+target/
+
+.DS_Store
+Thumbs.db
