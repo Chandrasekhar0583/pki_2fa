@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  pki2fa:
+    build: .
+    container_name: pki2fa
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data
+      - ./cron:/cron
+    environment:
+      - TZ=UTC
+      - STUDENT_PRIVATE_KEY_PATH=/app/keys/student_private.pem
+    restart: always
